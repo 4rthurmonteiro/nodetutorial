@@ -25,7 +25,7 @@ exports.list = function(callback){
 }
 
 exports.delete = function(id, callback){
-    Produto.findById(Id, function(error, produto){
+    Produto.findById(id, function(error, produto){
         if(error){
             callback({error: 'Não foi possivel excluir'});
         }else{
